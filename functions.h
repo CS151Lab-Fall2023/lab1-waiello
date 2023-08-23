@@ -23,6 +23,6 @@
 using namespace std;
 void makeVectors(ifstream &file, vector <int>& numOfWins, vector <string>& teamNames);
 void sortFiles(vector <int>& numOfWins, vector <string>& teamNames);
-
+void writeFiles(ofstream &file, vector <int>& numOfWins, vector <string>& teamNames);
 
 #endif

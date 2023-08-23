@@ -46,3 +46,12 @@ void sortFiles(vector <int>& numOfWins, vector <string>& teamNames){
 
     }
 }
+void writeFiles(ofstream &file, vector <int>& numOfWins, vector <string>& teamNames){
+    file.open("winners.csv");
+    file << "Team name, Number of wins" << endl;
+    for(int i = teamNames.size()-1; i>=0; i--){
+        file << teamNames[i] << ", " << numOfWins[i] << endl;
+    }
+    file.close();
+
+}
