@@ -8,19 +8,13 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-
-
-
-#endif // FUNCTIONS_H
-
-#ifndef SORT_H
-#define SORT_H
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <iomanip>
 
 using namespace std;
+
 void makeVectors(ifstream &file, vector <int>& numOfWins, vector <string>& teamNames);
 void sortFiles(vector <int>& numOfWins, vector <string>& teamNames);
 void writeFiles(ofstream &file, vector <int>& numOfWins, vector <string>& teamNames);
